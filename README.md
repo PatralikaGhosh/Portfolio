@@ -1,1 +1,2 @@
-This is the link to the website: # PatralikaGhosh.github.io
+# PatralikaGhosh.github.io
+This is the link to the website: https://patralikaghosh.github.io/
