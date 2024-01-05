@@ -5,5 +5,5 @@ Images Used:
 Portfolio, Qualifications, Services Background Gif: https://giphy.com/gifs/tetris-zirvjg7inwu2s
 Index Background Gif: https://cdn.wallpapersafari.com/84/11/BcnSgM.gif
 
-# PatralikaGhosh.github.io
+
 This is the link to the website: https://patralikaghosh.github.io/
