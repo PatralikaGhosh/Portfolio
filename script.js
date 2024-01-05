@@ -1,3 +1,4 @@
+
 // Text to display with typing effect
 var textToType = "Patralika Ghosh";
 // Speed of typing in milliseconds
