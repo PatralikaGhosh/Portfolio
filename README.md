@@ -6,4 +6,4 @@ Portfolio, Qualifications, Services Background Gif: https://giphy.com/gifs/tetri
 Index Background Gif: https://cdn.wallpapersafari.com/84/11/BcnSgM.gif
 
 
-This is the link to the website: https://patralikaghosh.github.io/
+Link: https://patralikaghosh.github.io/

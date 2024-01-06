@@ -1,12 +1,12 @@
 
-// Text to display with typing effect
-var textToType = "Patralika Ghosh";
+// // Text to display with typing effect
+// var textToType = "Patralika Ghosh";
 // Speed of typing in milliseconds
 var typingSpeed = 100;
 // Get the element where the text will be displayed
 var typingTextElement = document.getElementById("typing-text");
 // Function to simulate typing effect
-function typeText() {
+function typeText(textToType) {
     var index = 0;
     var textLength = textToType.length;
     if (typingTextElement) {
@@ -24,8 +24,6 @@ function typeText() {
         type();
     }
 }
-// Start typing when the page loads
-window.onload = typeText;
 // Get the elements
 var overlay = document.querySelector('.overlay');
 var closeButton = document.querySelector('.close-button');

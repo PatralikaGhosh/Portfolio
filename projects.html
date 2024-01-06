@@ -4,17 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link id="theme-link" rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@600&display=swap" rel="stylesheet">
         <title>Patralika Ghosh's website</title>
-        <nav>
-            <a href="index.html"><img src="files/backbutton.png"></a>
-        </nav>
     </head>
-    <body class="body_portfolio">
-        <div class="container_qualifications">
-            <header class="container_qualifications">
-                <h1><b>Portfolio</b></h1>
-            </header>
-        </div>
+    <body class="body_portfolio" onload="typeText('Projects')">
+        <nav>
+            <ul class="horizontal-menu-top">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
+        <h1 class="headings-pages"id="typing-text"></h1>
+        <script src="script.js"></script>
         <main>
             <button id="openButton">Analysis of an Electrocardiogram</button>
     
@@ -58,7 +63,6 @@
                 </div>
             </div>
             <script src="script3.js"></script>
-            <script src="toggle.js"></script>
         </main>
     </body>
 </html>

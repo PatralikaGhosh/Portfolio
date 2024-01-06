@@ -4,7 +4,8 @@
 .body_head {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
     background-color: #f5f5f5;
     color: #333;
 }
@@ -103,8 +104,9 @@ h1, h2, p, ul{
 .body_portfolio {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('files/portfolio_background.gif');
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
+    background-color: #0a0a0a;
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -113,8 +115,9 @@ h1, h2, p, ul{
 .body_qualifications {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('files/portfolio_background.gif');
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
+    background-color: #0a0a0a;
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -124,8 +127,9 @@ h1, h2, p, ul{
 .body_services {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('files/portfolio_background.gif');
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
+    background-color: #0a0a0a;
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -259,4 +263,34 @@ a:hover {
 a:visited {
     color: #387b6d; 
 }
+
+.horizontal-menu-top {
+    list-style-type: none;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-menu-top li {
+    margin: 0;
+}
+
+.horizontal-menu-top li a {
+    display: block;
+    padding: 15px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #fff; /* Text color for the menu items */
+    transition: background-color 0.3s ease;
+}
+
+.horizontal-menu-top li a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+.headings-pages {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
 
