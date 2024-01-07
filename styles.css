@@ -55,7 +55,6 @@ footer {
     list-style-type: none;
     padding: 0;
     display: flex;
-    /*background-color: #333;  Background color for the menu */
 }
 
 .horizontal-menu li {
@@ -64,28 +63,28 @@ footer {
 
 .horizontal-menu li a {
     display: block;
-    padding: 15px 20px; /* Adjust padding as needed */
+    padding: 15px 20px; 
     text-decoration: none;
-    color: #fff; /* Text color for the menu items */
+    color: #fff; 
     transition: background-color 0.3s ease;
 }
 
 .horizontal-menu li a:hover {
-    background-color: #555; /* Background color on hover */
+    background-color: #555; 
 }
 
 .centered_header {
     background-color: #1f1f1f;
     color: #fff;
     background-image: url('files/gif_background.gif');
-    background-size: cover; /* Adjust as needed */
-    background-repeat: no-repeat; /* Prevent repeating of the image */
-    background-attachment: fixed; /* Fixed background position */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     /* Other styles for text, links, etc. */
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* 100% of the viewport height */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 p{
@@ -104,7 +103,7 @@ h1, h2, p, ul{
 .body_portfolio {
     margin: 0;
     padding: 0;
-    font-family: 'Genos', sans-serif;
+    font-family: 'Kalnia', serif;
     font-size: 20px;
     background-color: #0a0a0a;
     background-size: cover; 
@@ -115,7 +114,7 @@ h1, h2, p, ul{
 .body_qualifications {
     margin: 0;
     padding: 0;
-    font-family: 'Genos', sans-serif;
+    font-family: 'Kalnia', serif;
     font-size: 20px;
     background-color: #0a0a0a;
     background-size: cover; 
@@ -127,7 +126,7 @@ h1, h2, p, ul{
 .body_services {
     margin: 0;
     padding: 0;
-    font-family: 'Genos', sans-serif;
+    font-family: 'Kalnia', serif;
     font-size: 20px;
     background-color: #0a0a0a;
     background-size: cover; 
@@ -146,8 +145,7 @@ h1, h2, p, ul{
 .container_qualifications { /* Middle of the top of the page --> for headers*/
     display: flex;
     padding = 20;
-    /*align-items: center;  Center vertically */
-    justify-content: center; /* Center horizontally */
+    justify-content: center; 
     min-height: 100vh; 
 }
 
@@ -165,8 +163,8 @@ nav img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center;
     z-index: 999;
 }
 
@@ -293,4 +291,35 @@ a:visited {
 }
 
 
+#container {
+    display: flex;
+}
 
+#buttons {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the buttons */
+button {
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    background-color: #2b5b47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Kalnia', serif;
+}
+
+button:hover {
+    background-color: #20db58;
+}
+
+/* Style for the text */
+#text {
+    font-size: 18px;
+    margin-left: 300px;
+}
