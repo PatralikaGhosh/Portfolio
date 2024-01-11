@@ -24,23 +24,3 @@ function typeText(textToType) {
         type();
     }
 }
-// Get the elements
-var overlay = document.querySelector('.overlay');
-var closeButton = document.querySelector('.close-button');
-// Function to open the faded box
-function openFadedBox() {
-    if (overlay) {
-        overlay.style.display = 'flex'; // Display the overlay
-    }
-}
-// Function to close the faded box
-function closeFadedBox() {
-    if (overlay) {
-        overlay.style.display = 'none'; // Hide the overlay
-    }
-}
-// Event listeners for opening and closing the faded box
-if (overlay && closeButton) {
-    overlay.addEventListener('click', closeFadedBox);
-    closeButton.addEventListener('click', closeFadedBox);
-}
