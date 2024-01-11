@@ -2,77 +2,76 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link id="theme-link" rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap" rel="stylesheet">
         <title>Patralika Ghosh's website</title>
     </head>
-    <body class="body_qualifications">
-        <body class="body_portfolio" onload="typeText('Qualifications')"></body>
+    <body class="body_qualifications" onload="typeText('Skills')">
         <nav>
             <ul class="horizontal-menu-top">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="qualifications.html">Qualifications</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="interests.html">Interests</a></li>
+                <li><a href="qualifications.html">Skills</a></li>
+                <li><a href="https://nimrobotics.com/hfes23/">Research</a></li>
             </ul>
         </nav>
         <h1 class="headings-pages"id="typing-text"></h1>
         <script src="script.js"></script>
-          <main>
-            <button id="openButton">Technical Skills</button>
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    <button class="openButton" data-target="fadedBox1">Technical Skills 1</button>
+                </div>
+                <div class="col">
+                    <button class="openButton" data-target="fadedBox2">Technical Skills 2</button>
+                </div>
+                <div class="col">
+                    <button class="openButton" data-target="fadedBox3">Technical Skills 3</button>
+                </div>
+                <!-- Add more buttons as needed -->
+            </div>
+    
             <!-- Faded Box (Hidden by Default) -->
-             <div class="overlay" id="fadedBox">
-                <div class="content">
-                    <h4>Technical Skills</h4>
+            <div class="row">
+                <div class="col">
+                    <div class="overlay" id="fadedBox1">
                         <p>
                             <ul>
-                                HTML <br>
-                                CSS <br>
-                                Python<br>
-                                C++<br>
-                                Java<br>
-                                Numpy<br>
-                                Pandas<br>
-                                Seaborn<br>
-                                Matplotlib<br>
-                                GitHub<br>
-                                SQL<br>
-                                Kali Linux<br>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Python</li>
+                                <li>C++</li>
                             </ul>
+                            <button class="closeButton" data-target="fadedBox1">Close</button>
                         </p>
-                    <button id="closeButton">Close</button>
+                    </div>
                 </div>
-            </div>
-
-            <script src="script2.js"></script>
-            <button id="openButton2">Technical Areas of Interest</button>
-            <!-- Faded Box (Hidden by Default) -->
-             <div class="overlay2" id="fadedBox2">
-                <div class="content2">
-                    <h4>Technical Areas of Interest</h4>
-                        <p>Cybersecurity offers a wide range of career paths and specializations. <br>
-                            You can choose to be a cybersecurity analyst, penetration tester, ethical hacker, security consultant, <br>
-                            incident responder, or even work in management or policy development related to cybersecurity. Working in <br>
-                            cybersecurity allows you to play a critical role in protecting individuals, organizations, and even nations <br>
-                            from cyber threats. Your efforts can directly contribute to safeguarding sensitive information <br>
-                            and critical infrastructure.<br> <br>
-                            Data science is at the forefront of innovation. You'll have the chance to work on cutting-edge <br>
-                            technologies like artificial intelligence (AI), deep learning, and natural language processing (NLP), <br>
-                            contributing to the development of groundbreaking solutions and products. Data science has the potential <br>
-                            to drive significant positive change. Whether you're improving healthcare outcomes, optimizing supply chains, <br>
-                            or enhancing customer experiences, your work can have a tangible impact on society and business.<br><br>
-                            <a href="https://www.packetlabs.net/posts/239-cybersecurity-statistics-2023/#:~:text=The%20Top%20Cybersecurity%20Statistics%20of%202023%20%28So%20Far%29,malware%20is%20being%20delivered%20via%20email%20More%20items">Cybersecurity Statistics</a>
-                            
+                <div class="col">
+                    <div class="overlay" id="fadedBox2">
+                        <p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <button class="closeButton" data-target="fadedBox2">Close</button>
                         </p>
-                    <button id="closeButton2">Close</button>
+                    </div>
                 </div>
+                <div class="col">
+                    <div class="overlay" id="fadedBox3">
+                        <p>
+                            <ul>
+                                <li>HTML</li>
+                            </ul>
+                            <button class="closeButton" data-target="fadedBox3">Close</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- Add more faded boxes as needed -->
             </div>
-
-
-            <script src="script3.js"></script>
         </main>
+        <script src="script2.js"></script>
     </body>
 </html>

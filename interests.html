@@ -7,62 +7,71 @@
         <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap" rel="stylesheet">
         <title>Patralika Ghosh's website</title>
     </head>
-    <body class="body_portfolio" onload="typeText('Interests')">
-        <nav>
-            <ul class="horizontal-menu-top">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="qualifications.html">Qualifications</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="interests.html">Interests</a></li>
-            </ul>
-        </nav>
-        <h1 class="headings-pages"id="typing-text"></h1>
-        <script src="script.js"></script>
-        <main>
-            <button id="openButton">Analysis of an Electrocardiogram</button>
-    
-             <div class="overlay" id="fadedBox">
-                <div class="content">
-                    <h4>Analysis of an Electrocardiogram</h4>
-                        <p>I was an Undergraduate Research Assistant at the Neuroergonomics Laboratory at Texas A&M. There were many research projects that <br>
-                            were going on. I was on the research project that tried to quantify trust in a multi-human robot team in a first responder situation. <br>
-                            There were experiments that were conducted and there was a lot of data that was analyzed. I was on the team that was analyzing an <br>
-                            electrocardiogram of two people to find cardiac synchrony between them. It was a team project and the programming languages that<br>
-                            were used was Python and R. A lesser known Python library that was used is the Neurokit Library. We also used RHRV and CRQA libraries <br>
-                            to extract features that helped our analysis. The scientific instrument we used for data collection is Actiheart. The method of analysis <br>
-                            that was used was Cross-Recurrence Quantification Analysis.
-                            <br> <br> <img src="files/ecg.png" width="150" height="150"> <br>
-                            <ul>
-                                <a href="https://neuroergonomics.engr.tamu.edu/">| Neuroergonomics Lab | </a> 
-                                <a href="https://www.camntech.com/actiheart-software/">Actiheart | </a>
-                                <a href="https://pypi.org/project/neurokit2/">Neurokit |</a>
-                            </ul>
+<body class="body_qualifications" onload="typeText('Few Moments')">
+    <nav>
+        <ul class="horizontal-menu-top">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="qualifications.html">Skills</a></li>
+            <li><a href="https://nimrobotics.com/hfes23/">Research</a></li>
+        </ul>
+    </nav>
+    <h1 class="headings-pages"id="typing-text"></h1>
+    <script src="script.js"></script>
 
-                        </p>
-                    <button id="closeButton">Close</button>
-                </div>
-            </div>
-            <script src="script2.js"></script>
-            
-            <button id="openButton2">Black jack</button>
-    
-             <div class="overlay2" id="fadedBox2">
-                <div class="content2">
-                    <h4>Black Jack</h4>
-                        <p>This project is still in progress. <br>
-                            It is coded in Python and I have been working Tkinter currently. <br>
-                            Blackjack, also known as 21, is a popular card game played in casinos around the world. <br>
-                            The game is relatively simple to learn but involves strategic decision-making. <br>
-                            The primary objective of Blackjack is to beat the dealer by having a hand value as <br>
-                            close to 21 as possible without exceeding it or "busting." Alternatively, you win if <br>
-                            the dealer busts while you do not.<br> 
-                            <a href="https://github.com/PatralikaGhosh/Blackjack.git"> GitHub </a> </p>
-                    <button id="closeButton2">Close</button>
-                </div>
-            </div>
-            <script src="script3.js"></script>
-        </main>
-    </body>
+
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides">
+            <img src="files/portfolio_background.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="files/portfolio_background_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="files/openai_logo.jpg" style="width:100%">
+        </div>
+
+        <!-- Navigation dots -->
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for the slideshow functionality
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+    </script>
+
+</body>
 </html>
