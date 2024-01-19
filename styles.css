@@ -137,7 +137,6 @@ h1, h2, p, ul{
 
 .container_portfolio { /* Middle of the page --> for headers*/
     display: flex;
-    /*padding = 20;*/
     align-items: center;  /*Center vertically */
     justify-content: center; /* Center horizontally */
     min-height: 100vh; 
@@ -193,8 +192,10 @@ nav img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
+    left: calc(50% + 20px); /* Adjust the value as needed to move it to the right */
+    justify-content: center; 
 }
 
 a{

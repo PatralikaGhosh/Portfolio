@@ -19,58 +19,91 @@
         </nav>
         <h1 class="headings-pages"id="typing-text"></h1>
         <script src="script.js"></script>
-        <main class="container">
-            <div class="row">
-                <div class="col">
-                    <button class="openButton" data-target="fadedBox1">Technical Skills 1</button>
-                </div>
-                <div class="col">
-                    <button class="openButton" data-target="fadedBox2">Technical Skills 2</button>
-                </div>
-                <div class="col">
-                    <button class="openButton" data-target="fadedBox3">Technical Skills 3</button>
-                </div>
-                <!-- Add more buttons as needed -->
-            </div>
+        <main>
+            <button class="openButton" data-target="fadedBox1">HTML</button>
+            <button class="openButton" data-target="fadedBox2">CSS</button>
+            <button class="openButton" data-target="fadedBox3">Javascript</button>
+            <button class="openButton" data-target="fadedBox3">Django</button>
+            <button class="openButton" data-target="fadedBox3">React.js</button>
+            <button class="openButton" data-target="fadedBox3">SQL</button>
+            <button class="openButton" data-target="fadedBox3">C++</button>
+            <button class="openButton" data-target="fadedBox3">Python</button>
+            <button class="openButton" data-target="fadedBox3">Java</button>
+
+            <button class="openButton" data-target="fadedBox1">HTML</button>
+            <button class="openButton" data-target="fadedBox2">CSS</button>
+            <button class="openButton" data-target="fadedBox3">Javascript</button>
+            <button class="openButton" data-target="fadedBox3">Django</button>
+            <button class="openButton" data-target="fadedBox3">React.js</button>
+            <button class="openButton" data-target="fadedBox3">SQL</button>
+            <button class="openButton" data-target="fadedBox3">C++</button>
+            <button class="openButton" data-target="fadedBox3">Python</button>
+            <button class="openButton" data-target="fadedBox3">Java</button>
+            <button class="openButton" data-target="fadedBox3">Java</button>
     
-            <!-- Faded Box (Hidden by Default) -->
-            <div class="row">
-                <div class="col">
-                    <div class="overlay" id="fadedBox1">
-                        <p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Python</li>
-                                <li>C++</li>
-                            </ul>
-                            <button class="closeButton" data-target="fadedBox1">Close</button>
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="overlay" id="fadedBox2">
-                        <p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                            </ul>
-                            <button class="closeButton" data-target="fadedBox2">Close</button>
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="overlay" id="fadedBox3">
-                        <p>
-                            <ul>
-                                <li>HTML</li>
-                            </ul>
-                            <button class="closeButton" data-target="fadedBox3">Close</button>
-                        </p>
-                    </div>
-                </div>
-                <!-- Add more faded boxes as needed -->
+            <div class="overlay" id="fadedBox1">
+                <p>
+                    <ul>
+                        <li>Obtained this skill from/used in:</li>
+                        <br>
+                        <li>This portfolio</li>
+                        <li>CSCE 331/315 at Texas A&M University</li>
+                        <br>
+                        <li><button class="closeButton" data-target="fadedBox1">Close</button></li>
+                    </ul>
+                </p>
             </div>
+
+            <div class="overlay" id="fadedBox2">
+                <p>
+                    <ul>
+                        <li>Obtained this skill from/used in:</li>
+                        <br>
+                        <li>This portfolio</li>
+                        <li>CSCE 331/315 at Texas A&M University</li>
+                        <br>
+                        <li><button class="closeButton" data-target="fadedBox2">Close</button></li>
+                    </ul>
+                </p>
+            </div>
+        
+        
+            <div class="overlay" id="fadedBox3">
+                <p>
+                    <ul>
+                        <li>Obtained this skill from/used in:</li>
+                        <br>
+                        <li>This portfolio</li>
+                        <li>CSCE 331/315 at Texas A&M University</li>
+                        <br>
+                        <li><button class="closeButton" data-target="fadedBox3">Close</button></li>
+                    </ul>
+                </p>
+            </div>        
+            <h1 class="headings-pages">Certifications</h1>
+            <div id="container_projects">
+                <!-- Buttons on the left -->
+                <div id="buttons" >
+                    <button onclick="changeText('<p>Django</p>')">Intro to Python</button>
+                    <button onclick="changeText('<p>Python Machine Learning</p>')">Machine Learning- Python</button>
+                    <button onclick="changeText('<p>Google Cybersecurity Certificate</p>')">Google Cybersecurity Certificate</button>
+                    <button onclick="changeText('<p>SQL</p>')">Intro to SQL</button>
+                    <button onclick="changeText('<p>Django</p>')">Intro to Django</button>
+                </div>
+                
+                <!-- Text on the right -->
+                <div id="text">
+                    <p> For more information on the skills or certifications please click on them.
+                    </p>
+                </div>
+            </div>
+
+            <script>
+                // JavaScript function to change the text
+                function changeText(newHTML) {
+                    document.getElementById('text').innerHTML = newHTML;
+                }
+            </script>
         </main>
         <script src="script2.js"></script>
     </body>
