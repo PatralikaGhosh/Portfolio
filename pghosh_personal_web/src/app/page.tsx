@@ -30,8 +30,7 @@ const Home = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link id="theme-link" rel="stylesheet" href="styles.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@600&display=swap" rel="stylesheet" />
+        <link id="theme-link" rel="stylesheet" href="/styles.css" />
         <title>Patralika Ghosh's website</title>
       </Head>
       <div className="body_head">
