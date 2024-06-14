@@ -40,7 +40,7 @@ const Home = () => {
           <nav>
             <ul className="horizontal-menu">
               <li><Link href="/projects">Projects</Link></li>
-              <li><Link href="/qualifications">Skills</Link></li>
+              <li><Link href="/skills">Skills</Link></li>
               <li><Link href="https://nimrobotics.com/hfes23/">Research</Link></li>
             </ul>
           </nav>
