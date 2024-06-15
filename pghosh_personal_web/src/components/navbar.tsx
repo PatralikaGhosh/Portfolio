@@ -7,9 +7,8 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 const CustomButton = styled(Button)`
   color: green;
-  padding: 8px 16px; /* Add padding */
-  border-radius: 4px; /* Round the corners */
-
+  padding: 8px 16px; 
+  border-radius: 4px; 
   &:hover {
     background-color: green;
     color: white;

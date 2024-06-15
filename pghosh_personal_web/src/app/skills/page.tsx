@@ -2,32 +2,46 @@
 import React from "react";
 import Navbar from "@/components/navbar";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import TypingText from "@/components/typingtext"; // Make sure to adjust the import path as necessary
+import TypingText from "@/components/typingtext"; 
+import { Button } from '@nextui-org/react';
+import styled from 'styled-components';
+import Link from 'next/link';
+
+const CustomButton = styled(Button)`
+  background-color: green;
+  color: white;
+  padding: 8px 16px; 
+  border-radius: 4px; 
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+`;
 
 const Skills = () => {
   const typingSpeed = 100;
 
   const skillslist = [
-    { title: "C++", img: "c_plus_plus.png", url: "https://en.wikipedia.org/wiki/C%2B%2B"},
-    { title: "Java", img: "java.jpeg", url: "https://en.wikipedia.org/wiki/Java_(programming_language)"},
-    { title: "Python", img: "python.jpg", url: "https://en.wikipedia.org/wiki/Python_(programming_language)"},
-    { title: "HTML", img: "html.jpg", url: "https://en.wikipedia.org/wiki/HTML"},
-    { title: "CSS", img: "css.jpg", url: "https://en.wikipedia.org/wiki/CSS" },
-    { title: "Typescript", img: "/typescript.jpg", url: "https://www.typescriptlang.org/"},
-    { title: "Javascript", img: "javascript.webp", url: "https://en.wikipedia.org/wiki/JavaScript"},
-    { title: "React.js", img: "react.jpg", url: "https://reactjs.org/" },
-    { title: "Next.js", img: "nextjs.png", url: "https://nextjs.org/" },
-    { title: "Django", img: "Django.jpg", url: "https://www.djangoproject.com/"},
-    { title: "PostgreSQL", img: "postgre-sql.jpg", url: "https://www.postgresql.org/" },
-    { title: "R", img: "r_lang.png", url: "https://www.r-project.org/"},
-    { title: "Latex", img: "latex.png", url: "https://www.latex-project.org/"},
-    { title: "Linux", img: "linux.jpg", url: "https://en.wikipedia.org/wiki/Linux"},
+    { title: "C++", img: "c_plus_plus.png"},
+    { title: "Java", img: "java.jpeg"},
+    { title: "Python", img: "python.jpg"},
+    { title: "HTML", img: "html.jpg"},
+    { title: "CSS", img: "css.jpg"},
+    { title: "Typescript", img: "/typescript.jpg"},
+    { title: "Javascript", img: "javascript.webp"},
+    { title: "React.js", img: "react.jpg"},
+    { title: "Next.js", img: "nextjs.png" },
+    { title: "Django", img: "Django.jpg"},
+    { title: "PostgreSQL", img: "postgre-sql.jpg" },
+    { title: "R", img: "r_lang.png"},
+    { title: "Latex", img: "latex.png"},
+    { title: "Linux", img: "linux.jpg"},
   ];
 
   const certslist = [
-    { title: "Google Cybersecurity Certificate", img: "google_cert.jpg", url: "https://www.coursera.org/professional-certificates/google-cybersecurity"},
-    { title: "Machine Learning in Python", img: "udemy.jpg", url: "https://www.udemy.com/course/machine-learning-in-python/"},
-    { title: "Complete Python Bootcamp", img: "udemy.jpg", url: "https://www.udemy.com/course/complete-python-bootcamp/"},
+    { title: "Google Cybersecurity Certificate", img: "google_cert.jpg", url: "https://coursera.org/verify/professional-cert/MNW77W3KMA7Y"},
+    { title: "Machine Learning in Python", img: "udemy.jpg", url: "https://www.udemy.com/certificate/UC-d56dcc42-b710-4d0f-862d-268417359105/"},
+    { title: "Complete Python Bootcamp", img: "udemy.jpg", url: "https://www.udemy.com/certificate/UC-22cc9fca-b525-462c-981f-2c438f918e37/"},
   ];
 
 
@@ -79,6 +93,11 @@ const Skills = () => {
               </CardBody>
               <CardFooter className="text-small justify-between">
                 <b>{item.title}</b>
+                <Link href={item.url} passHref>
+                  <CustomButton as="a" color="primary" variant="ghost" isLoading>
+                    Click for more info
+                  </CustomButton>
+                </Link>
               </CardFooter>
             </Card>
           ))}
