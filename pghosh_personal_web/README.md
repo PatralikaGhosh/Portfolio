@@ -38,7 +38,24 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Dependecies that I used:
 
-https://nextui.org/docs/components/card#cover-image - npm install @nextui-org/card
+* https://nextui.org/docs/components/card#cover-image - npm install @nextui-org/card
 
-https://styled-components.com/docs/advanced - npm install styled-components
+* https://styled-components.com/docs/advanced - npm install styled-components
 
+* npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+* https://nextui.org/docs/components/button - npx nextui-cli@latest add button
+
+* Anime  - npm install animejs, npm i --save-dev @types/animejs
+
+* Error Solutions:
+If you get this error:
+
+[Error: EINVAL: invalid argument, readlink 'C:\Users\ghosh\OneDrive\Desktop\PatralikaGhosh.github.io\pghosh_personal_web\.next\server\app\favicon.ico\route.js'] {
+  errno: -4071,
+  code: 'EINVAL',
+  syscall: 'readlink',
+  path: 'C:\\Users\\ghosh\\OneDrive\\Desktop\\PatralikaGhosh.github.io\\pghosh_personal_web\\.next\\server\\app\\favicon.ico\\route.js'
+}
+
+*** delete the .next folder and run npm run dev

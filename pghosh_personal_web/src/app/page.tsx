@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import './styles.css'; // Import your CSS file
+import './styles.css';
 
 const Home = () => {
   const [typingText, setTypingText] = useState("");
@@ -39,8 +39,8 @@ const Home = () => {
           <h1 id="typing-text">{typingText}</h1>
           <nav>
             <ul className="horizontal-menu">
-              <li><Link href="/projects">Projects</Link></li>
-              <li><Link href="/skills">Skills</Link></li>
+              <li><Link href="/projects" passHref>Projects</Link></li>
+              <li><Link href="/skills" passHref>Skills</Link></li>
               <li><Link href="https://nimrobotics.com/hfes23/">Research</Link></li>
             </ul>
           </nav>

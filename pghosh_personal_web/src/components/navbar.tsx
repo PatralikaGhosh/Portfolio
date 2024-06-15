@@ -1,10 +1,25 @@
 // components/Navbar.tsx
 import styled from 'styled-components';
 import Link from 'next/link';
+import { Button } from '@nextui-org/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
+const CustomButton = styled(Button)`
+  color: green;
+  padding: 8px 16px; /* Add padding */
+  border-radius: 4px; /* Round the corners */
+
+  &:hover {
+    background-color: green;
+    color: white;
+  }
+`;
 
 const NavbarContainer = styled.nav`
   background-color: black;
   padding: 10px 20px;
+  font-family: 'Roboto Mono', monospace;
 `;
 
 const NavList = styled.ul`
@@ -16,15 +31,22 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   margin-right: 20px;
+  display: flex;
+  align-items: center;
 `;
 
-const NavLink = styled.a`
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
+const HomeButton = styled(Button)`
+  padding: 0; 
+  border: none; 
+  color: green;
+  svg {
+    transition: color 0.3s; /* Smooth color transition */
+  }
 
   &:hover {
-    color: green;
+    svg {
+      color: white; /* Change icon color on hover */
+    }
   }
 `;
 
@@ -33,18 +55,31 @@ const Navbar = () => {
     <NavbarContainer>
       <NavList>
         <NavItem>
+          <Link href="/" passHref>
+            <HomeButton as="a" color="primary" variant="ghost">
+              <FontAwesomeIcon icon={faHome} />
+            </HomeButton>
+          </Link>
+        </NavItem>
+        <NavItem>
           <Link href="/projects" passHref>
-            <NavLink>Projects</NavLink>
+            <CustomButton as="a" color="primary" variant="ghost">
+              Projects
+            </CustomButton>
           </Link>
         </NavItem>
         <NavItem>
           <Link href="/skills" passHref>
-            <NavLink>Skills</NavLink>
+            <CustomButton as="a" color="primary" variant="ghost">
+              Skills
+            </CustomButton>
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="/research" passHref>
-            <NavLink>Research</NavLink>
+          <Link href="https://nimrobotics.com/hfes23/" passHref>
+            <CustomButton as="a" color="primary" variant="ghost">
+              Research
+            </CustomButton>
           </Link>
         </NavItem>
       </NavList>
