@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/navbar";  // Ensure the path matches your file structure
+import Navbar from "@/components/navbar"; 
 import TypingText from "@/components/typingtext";
-import CardComponent from "@/components/projectcard";  // Import the CardComponent
+import CardComponent from "@/components/projectcard";
+
+type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
+type Position = "absolute" | "relative" | "static" | "sticky" | "fixed";
+type FlexWrap = "nowrap" | "wrap" | "wrap-reverse";
 
 const Projects = () => {
   const typingSpeed = 100;
@@ -25,7 +29,7 @@ const Projects = () => {
       title: "POS System",
       description: "The system featured distinct views for Customers, Managers, and Cashiers, providing a tailored user experience. Our project utilized a robust Django backend and an interactive React.js frontend, with a PostgreSQL database ensuring efficient data storage and seamless order management.",
       technologies: ["react", "django", "sql"],
-      imageUrl: "https://nextui.org/images/hero-card-complete.jpeg",
+      imageUrl: "pos_system.png",
       githubURL: "",
     },
     {
@@ -69,17 +73,17 @@ const styles = {
     height: "100vh",
     color: "white",
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as FlexDirection,
   },
   main: {
     backgroundColor: "black",
     flex: 1,
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as FlexDirection,
     alignItems: "center",  
     justifyContent: "center",  
     padding: "20px",
-    position: "relative",
+    position: "relative" as Position,
     fontFamily: "'Roboto Mono', monospace",
   },
   heading: {
@@ -91,8 +95,8 @@ const styles = {
   },
   cardsContainer: {
     display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
+    flexDirection: "row" as FlexDirection,
+    flexWrap: "wrap" as FlexWrap,
     gap: "20px",
     justifyContent: "center",
     alignItems: "center",

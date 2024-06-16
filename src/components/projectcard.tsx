@@ -5,7 +5,22 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { Button } from '@nextui-org/react';
 
-const iconsMap = {
+enum TextAlign {
+  left = 'left',
+  right = 'right',
+  center = 'center',
+  justify = 'justify',
+}
+
+type CardProps = {
+  title: string;
+  description: string;
+  technologies: string[];
+  imageUrl: string;
+  githubURL: string;
+};
+
+const iconsMap: { [key: string]: any } = {
   python: faPython,
   react: faReact,
   javascript: faJs,
@@ -15,7 +30,7 @@ const iconsMap = {
   css3: faCss3,
 };
 
-const customIconsMap = {
+const customIconsMap: { [key: string]: string } = {
   typescript: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg',
   django: 'django_logo.svg',
   linux: 'linux_logo.svg',
@@ -29,40 +44,40 @@ const CustomButton = styled(Button)`
   color: white;
   padding: 8px 16px;
   border-radius: 4px;
-  margin-top: 20px;  // Add some margin to the button
+  margin-top: 20px;
   &:hover {
     background-color: black;
     color: white;
   }
 `;
 
-const CardComponent = ({ title, description, technologies, imageUrl, githubURL }) => {
-    return (
-      <div style={cardStyles.card}>
-        <img src={imageUrl} alt={`${title} image`} style={cardStyles.image} />
-        <h2 style={cardStyles.title}>{title}</h2>
-        <p style={cardStyles.description}>{description}</p>
-        <div style={cardStyles.icons}>
-          {technologies.map((tech, index) => (
-            iconsMap[tech] ? (
-              <FontAwesomeIcon key={index} icon={iconsMap[tech]} style={cardStyles.icon} />
-            ) : (
-              customIconsMap[tech] && (
-                <img key={index} src={customIconsMap[tech]} alt={`${tech} icon`} style={cardStyles.customIcon} />
-              )
+const CardComponent = ({ title, description, technologies, imageUrl, githubURL }: CardProps) => {
+  return (
+    <div style={cardStyles.card}>
+      <img src={imageUrl} alt={`${title} image`} style={cardStyles.image} />
+      <h2 style={cardStyles.title}>{title}</h2>
+      <p style={cardStyles.description}>{description}</p>
+      <div style={cardStyles.icons}>
+        {technologies.map((tech, index) => (
+          iconsMap[tech] ? (
+            <FontAwesomeIcon key={index} icon={iconsMap[tech]} style={cardStyles.icon} />
+          ) : (
+            customIconsMap[tech] && (
+              <img key={index} src={customIconsMap[tech]} alt={`${tech} icon`} style={cardStyles.customIcon} />
             )
-          ))}
-        </div>
-        {githubURL && (
-          <Link href={githubURL} passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
-              View on Github
-            </CustomButton>
-          </Link>
-        )}
+          )
+        ))}
       </div>
-    );
-  };
+      {githubURL && (
+        <Link href={githubURL} passHref>
+          <CustomButton as="a" color="primary" variant="ghost">
+            View on Github
+          </CustomButton>
+        </Link>
+      )}
+    </div>
+  );
+};
 
 const cardStyles = {
   card: {
@@ -70,7 +85,7 @@ const cardStyles = {
     color: 'white',
     padding: '20px',
     borderRadius: '10px',
-    textAlign: 'center',
+    textAlign: 'center' as TextAlign,
     width: '300px',
     boxShadow: '0 0 10px rgba(0,0,0,0.5)',
   },
@@ -78,20 +93,20 @@ const cardStyles = {
     width: '100%',
     height: 'auto',
     borderRadius: '10px 10px 0 0',
-    marginBottom: '20px', // Add margin bottom for spacing
+    marginBottom: '20px',
   },
   title: {
-    margin: '20px 0 10px', // Add margin for spacing
+    margin: '20px 0 10px',
   },
   description: {
-    margin: '10px 0 20px', // Add margin for spacing
+    margin: '10px 0 20px',
   },
   icons: {
     marginTop: '20px',
     display: 'flex',
     justifyContent: 'center',
     gap: '10px',
-    marginBottom: '20px', // Add margin bottom for spacing
+    marginBottom: '20px',
   },
   icon: {
     color: 'green',
