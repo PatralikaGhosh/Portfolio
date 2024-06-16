@@ -10,6 +10,14 @@ import Link from 'next/link';
 type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
 type Position = "absolute" | "relative" | "static" | "sticky" | "fixed";
 
+enum TextAlign {
+  left = 'left',
+  right = 'right',
+  center = 'center',
+  justify = 'justify',
+}
+
+
 const CustomButton = styled(Button)`
   background-color: green;
   color: white;
@@ -132,8 +140,8 @@ const styles = {
     color: "green",
     fontSize: "100px",
     fontFamily: "'Roboto Mono', monospace",
-    textAlign: "right",
-    position: "absolute",
+    textAlign: "right" as TextAlign,
+    position: "absolute" as Position,
     top: 0,
     right: 0,
     margin: "20px",
@@ -142,8 +150,8 @@ const styles = {
     color: "green",
     fontSize: "100px",
     fontFamily: "'Roboto Mono', monospace",
-    textAlign: "left",
-    position: "absolute",
+    textAlign: "left" as TextAlign,
+    position: "absolute" as Position,
     left: 0,
     bottom: 200,
     margin: "20px",

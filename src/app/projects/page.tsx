@@ -8,6 +8,14 @@ type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
 type Position = "absolute" | "relative" | "static" | "sticky" | "fixed";
 type FlexWrap = "nowrap" | "wrap" | "wrap-reverse";
 
+enum TextAlign {
+  left = 'left',
+  right = 'right',
+  center = 'center',
+  justify = 'justify',
+}
+
+
 const Projects = () => {
   const typingSpeed = 100;
   const cardData = [
@@ -90,7 +98,7 @@ const styles = {
     color: "green",
     fontSize: "100px",
     fontFamily: "'Roboto Mono', monospace",
-    textAlign: "center",  
+    textAlign: "center" as TextAlign,  
     marginBottom: "40px",  
   },
   cardsContainer: {

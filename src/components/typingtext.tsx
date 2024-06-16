@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-const TypingText = ({ textToType, typingSpeed, style }) => {
+type TypingTextProps = {
+  textToType: string;
+  typingSpeed: number;
+  style: React.CSSProperties;
+};
+
+const TypingText = ({ textToType, typingSpeed, style }: TypingTextProps) => {
   const [typingText, setTypingText] = useState("");
 
   useEffect(() => {
