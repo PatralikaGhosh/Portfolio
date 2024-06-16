@@ -48,6 +48,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 * Anime  - npm install animejs, npm i --save-dev @types/animejs
 
+* Icons: npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
+
+
 * Error Solutions:
 If you get this error:
 

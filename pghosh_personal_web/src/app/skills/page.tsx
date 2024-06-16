@@ -94,7 +94,7 @@ const Skills = () => {
               <CardFooter className="text-small justify-between">
                 <b>{item.title}</b>
                 <Link href={item.url} passHref>
-                  <CustomButton as="a" color="primary" variant="ghost" isLoading>
+                  <CustomButton as="a" color="primary" variant="ghost">
                     Click for more info
                   </CustomButton>
                 </Link>
