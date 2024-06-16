@@ -7,6 +7,9 @@ import { Button } from '@nextui-org/react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
+type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
+type Position = "absolute" | "relative" | "static" | "sticky" | "fixed";
+
 const CustomButton = styled(Button)`
   background-color: green;
   color: white;
@@ -113,17 +116,17 @@ const styles = {
     height: "100vh",
     color: "white",
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as FlexDirection,
   },
   main: {
     backgroundColor: "black",
     flex: 1,
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as FlexDirection,
     alignItems: "flex-end",
     justifyContent: "flex-start",
     padding: "20px",
-    position: "relative",
+    position: "relative" as Position,
   },
   heading_Skills: {
     color: "green",
