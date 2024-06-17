@@ -110,12 +110,12 @@ const Navbar = () => {
         </NavItem>
       </NavList>
       <RightContainer>
-        <Link href="https://github.com/YourGitHubProfile" passHref>
+        <Link href="https://github.com/PatralikaGhosh" passHref>
           <IconLink>
             <FontAwesomeIcon icon={faGithub} />
           </IconLink>
         </Link>
-        <Link href="https://linkedin.com/in/YourLinkedInProfile" passHref>
+        <Link href="www.linkedin.com/in/patralika-ghosh-58331b25b" passHref>
           <IconLink>
             <FontAwesomeIcon icon={faLinkedin} />
           </IconLink>
