@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const CustomButton = styled(Button)`
   color: green;
@@ -19,7 +20,11 @@ const NavbarContainer = styled.nav`
   background-color: black;
   padding: 10px 20px;
   font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;
 `;
+
 
 const NavList = styled.ul`
   display: flex;
@@ -47,6 +52,21 @@ const HomeButton = styled(Button)`
       color: white; /* Change icon color on hover */
     }
   }
+`;
+
+const IconLink = styled.a`
+  color: green;
+  font-size: 24px;
+  margin-left: 20px;
+  transition: color 0.3s;
+  &:hover {
+    color: white;
+  }
+`;
+
+const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const Navbar = () => {
@@ -81,7 +101,26 @@ const Navbar = () => {
             </CustomButton>
           </Link>
         </NavItem>
+        <NavItem>
+          <Link href="https://drive.google.com/file/d/1lUFYfIXC-3xTTC-tbybiSlrVZwVf5-5i/view" passHref>
+            <CustomButton as="a" color="primary" variant="ghost">
+              Resume
+            </CustomButton>
+          </Link>
+        </NavItem>
       </NavList>
+      <RightContainer>
+        <Link href="https://github.com/YourGitHubProfile" passHref>
+          <IconLink>
+            <FontAwesomeIcon icon={faGithub} />
+          </IconLink>
+        </Link>
+        <Link href="https://linkedin.com/in/YourLinkedInProfile" passHref>
+          <IconLink>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </IconLink>
+        </Link>
+      </RightContainer>
     </NavbarContainer>
   );
 };
