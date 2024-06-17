@@ -115,7 +115,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faGithub} />
           </IconLink>
         </Link>
-        <Link href="www.linkedin.com/in/patralika-ghosh-58331b25b" passHref>
+        <Link href="https://www.linkedin.com/in/patralika-ghosh-58331b25b/" passHref>
           <IconLink>
             <FontAwesomeIcon icon={faLinkedin} />
           </IconLink>
