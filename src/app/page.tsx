@@ -43,6 +43,7 @@ const Home = () => {
               <li><Link href="/skills" passHref>Skills</Link></li>
               <li><Link href="https://nimrobotics.com/hfes23/">Research</Link></li>
               <li><Link href="https://drive.google.com/file/d/1lUFYfIXC-3xTTC-tbybiSlrVZwVf5-5i/view">Resume</Link></li>
+              <li><Link href="/photography" passHref>Photography</Link></li>
             </ul>
           </nav>
         </header>
