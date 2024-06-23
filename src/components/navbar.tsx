@@ -108,6 +108,13 @@ const Navbar = () => {
             </CustomButton>
           </Link>
         </NavItem>
+        <NavItem>
+          <Link href="/photography" passHref>
+            <CustomButton as="a" color="primary" variant="ghost">
+              Photography
+            </CustomButton>
+          </Link>
+        </NavItem>
       </NavList>
       <RightContainer>
         <Link href="https://github.com/PatralikaGhosh" passHref>

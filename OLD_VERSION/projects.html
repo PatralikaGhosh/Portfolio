@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="theme-link" rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap" rel="stylesheet">
+        <title>Patralika Ghosh's website</title>
+    </head>
+    <body class="body_portfolio" onload="typeText('Projects')">
+        <nav>
+            <ul class="horizontal-menu-top">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="qualifications.html">Skills</a></li>
+                <li><a href="https://nimrobotics.com/hfes23/">Research</a></li>
+            </ul>
+        </nav>
+        <h1 class="headings-pages"id="typing-text"></h1>
+        <script src="script.js"></script>
+        <main>
+            <div id="container_projects">
+                <!-- Buttons on the left -->
+                <div id="buttons" >
+                    <button onclick="changeText('<p>I built my own personal shell. <br> Commands that work: <ol> <li>echo</li> <li>ls, ls -l -a, ls -l /usr/bin.</li><li>pwd.</li><li>cd , cd ../../, cd -, cd /home.</li><li>Input Output Redirection (ex. ps aux > a, grep /init < a, grep /init < a > b).</li><li>Single Pipes (ex. ls -l | grep &quot; shell.cpp &quot;).</li></button><li>Multiple Pipes (ex. ps aux | awk \u0027/usr/{print $1}\u0027 | sort -r).</li><li>Multiple Pipes Redirection <br>(ex. ps aux > test.txt, awk \u0027{print $1$11}\u0027 < test.txt | head -10 | tr a-z A-Z | sort > output.txt, cat output.txt).<li>exit.</li></ol><br>Concepts that were used: Unix Processes in C++</p> <br> <a href=&quot;https://github.com/PatralikaGhosh/_myShell/tree/main&quot;>Click Here to see the GitHub Repository</a>')">My Shell</button>
+                    <button onclick="changeText('<p>In my Foundations of Software Engineering class at Texas A&M, <br>our project involved creating a Point of Sale (POS) system for a <br>Bubble Tea Company. The system featured distinct views catering <br>to Customers, Managers, and Cashiers, providing a seamless  and <br>tailored user experience. The foundation of our project was built <br>on a robust backend developed in <b>Django</b>, complemented by an <br>interactive frontend designed using <b>React.js</b>. <br><br>The system incorporated fundamental functionalities such as a <br>secure login system, allowing users to access their designated <br>roles with ease. The integration of a <b>PostgreSQL</b> database ensured <br>efficient and reliable data storage, facilitating seamless interactions<br> and order management. One notable enhancement to our POS system<br> was the implementation of a user-friendly chatbot. This innovative<br> feature significantly improved the customer experience by assisting<br> users in navigating the interface effortlessly. The chatbot served as a <br>helpful guide, providing support and answering queries, thereby <br>contributing to a more streamlined and enjoyable customer interaction. <br>There was also Google OAuth that was linked with the login system, a <br>Weather API, Google Translate and certain accessibility features such<br> as text to speech and increasing font size of the overall POS system. <br><br>Concepts that were used: SQL, Django, React.js</p>')">POS System</button>
+                    <button onclick="changeText('<p>This is a very simple implementation of the BlackJack game in Python. <br><br>Concepts that were used: Python<br><br><a href=&quot;https://github.com/PatralikaGhosh/Blackjack&quot;>Click Here to see the GitHub Repository</a></p>')">Black Jack Game</button>
+                    <button onclick="changeText('<p>I made this portfolio to summarize all of my skills, certifications, projects and experience. <br><br>Concepts that were used: HTML, CSS, JavaScript<br><br></p>')">Portfolio</button>
+                </div>
+                
+                <!-- Text on the right -->
+                <div id="text">
+                    <p> For more information on the projects please click on them.
+                    </p>
+                </div>
+            </div>
+
+            <script>
+                // JavaScript function to change the text
+                function changeText(newHTML) {
+                    document.getElementById('text').innerHTML = newHTML;
+                }
+            </script>
+        </main>
+    </body>
+</html>
