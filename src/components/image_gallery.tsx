@@ -7,9 +7,9 @@ const images = [
   'files/paramount.jpg', 'files/school.jpg','files/monkey.jpg', 'files/mountain_3.jpg', 
   'files/radio.jpg', 'files/random_face.jpg',
   'files/sky_tree.jpg', 'files/squirrel.jpg', 'files/lampost.jpg', 'files/half_lotus.jpg',
-  'files/lake.jpg', 'files/mountain_2.jpg', 'files/mountain_4.jpg', 'files/india.jpg',
+  'files/lake.jpg', 'files/mountain_2.jpg', 'files/mountain_4.jpg', 'files/greece_sky.JPG',
   'files/sun_goa.jpg', 'files/tree_mount.jpg', 'files/tree_waterfall.jpg', 'files/tree.jpg',
-  'files/waterfall.jpg', 'files/greece_sky.jpg', 'files/lights.jpg', 'files/greece.jpg', 'files/fire_2.jpg',
+  'files/waterfall.jpg', 'files/lights.jpg', 'files/greece.jpg', 'files/fire_2.jpg',
 ];
 
 
