@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Navbar from "@/components/navbar"; 
+import NavbarP from "@/components/navbar_photo"; 
 import TypingText from "@/components/typingtext";
 import Gallery from "@/components/image_gallery";
 
@@ -48,13 +48,14 @@ const PhotoGallery = () => {
 
   return (
     <div style={styles.page}>
-      <Navbar />
+      <NavbarP />
       <main style={styles.main}>
         <TypingText 
-          textToType="Photography" 
+          textToType="Photo Gallery" 
           typingSpeed={typingSpeed} 
           style={styles.heading} 
         />
+        <h1>Click on the images to view them in full size</h1>
         <Gallery />
       </main>
     </div>

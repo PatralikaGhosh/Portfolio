@@ -68,7 +68,7 @@ const RightContainer = styled.div`
   align-items: center;
 `;
 
-const Navbar = () => {
+const NavbarP = () => {
   return (
     <NavbarContainer>
       <NavList>
@@ -77,34 +77,6 @@ const Navbar = () => {
             <HomeButton as="a" color="primary" variant="ghost">
               <FontAwesomeIcon icon={faHome} />
             </HomeButton>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="/projects" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
-              Projects
-            </CustomButton>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="/skills" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
-              Skills
-            </CustomButton>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="https://nimrobotics.com/hfes23/" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
-              Research
-            </CustomButton>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="https://drive.google.com/file/d/1lUFYfIXC-3xTTC-tbybiSlrVZwVf5-5i/view" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
-              Resume
-            </CustomButton>
           </Link>
         </NavItem>
       </NavList>
@@ -124,4 +96,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarP;
