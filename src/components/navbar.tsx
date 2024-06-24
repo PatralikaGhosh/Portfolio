@@ -101,7 +101,7 @@ const Navbar = () => {
           </Link>
         </NavItem>
         <NavItem>
-          <Link href="https://drive.google.com/file/d/1lUFYfIXC-3xTTC-tbybiSlrVZwVf5-5i/view" passHref>
+          <Link href="https://drive.google.com/file/d/16QU3Xp6obH6QRdJiQ1jtHrpVsYK3H2XV/view?usp=sharing" passHref>
             <CustomButton as="a" color="primary" variant="ghost">
               Resume
             </CustomButton>
