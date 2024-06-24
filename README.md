@@ -1,15 +1,11 @@
-Personal Website contains my portfolio, resume, qualifications and services.
+Personal Website contains my portfolio, resume, qualifications and my Photo gallery.
 
 Images Used:
-
-Portfolio, Qualifications, Services Background Gif: https://giphy.com/gifs/tetris-zirvjg7inwu2s
 Index Background Gif: https://cdn.wallpapersafari.com/84/11/BcnSgM.gif
+Images and icons are used from other websites.
 
 Version: 2.0 
 Implemented with Next.js.
-
-Link: https://patralikaghosh.github.io/
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -55,14 +51,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 * https://styled-components.com/docs/advanced - npm install styled-components
 
-* npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-
 * https://nextui.org/docs/components/button - npx nextui-cli@latest add button
 
 * Anime  - npm install animejs, npm i --save-dev @types/animejs
 
 * Icons: npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
-
 
 * Error Solutions:
 If you get this error:
