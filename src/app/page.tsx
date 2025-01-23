@@ -39,7 +39,7 @@ const Home = () => {
           <h1 id="typing-text">{typingText}</h1>
           <nav>
             <ul className="horizontal-menu">
-              <li><Link href="/projects" passHref>Technical Portfolio</Link></li>
+              <li><Link href="/technical" passHref>Technical Portfolio</Link></li>
               <li><Link href="/photography" passHref>Photography Portfolio</Link></li>
             </ul>
           </nav>
