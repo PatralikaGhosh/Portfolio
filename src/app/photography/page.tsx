@@ -1,65 +1,47 @@
-"use client";
-import React from 'react';
-import NavbarP from "@/components/navbar_photo"; 
-import TypingText from "@/components/typingtext";
-import Gallery from "@/components/image_gallery";
+// pages/maintenance.tsx
+import React from "react";
 
-type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
-type Position = "absolute" | "relative" | "static" | "sticky" | "fixed";
-
-enum TextAlign {
-  left = 'left',
-  right = 'right',
-  center = 'center',
-  justify = 'justify',
-}
-
-const styles = {
-  page: {
-    backgroundColor: "black",
-    height: "100vh",
-    color: "white",
-    display: "flex",
-    flexDirection: "column" as FlexDirection,
-  },
-  main: {
-    backgroundColor: "black",
-    flex: 1,
-    display: "flex",
-    flexDirection: "column" as FlexDirection,
-    alignItems: "center",  
-    justifyContent: "center",  
-    padding: "20px",
-    position: "relative" as Position,
-    fontFamily: "'Roboto Mono', monospace",
-  },
-  heading: {
-    color: "green",
-    fontSize: "100px",
-    fontFamily: "'Roboto Mono', monospace",
-    textAlign: "center" as TextAlign,  
-    marginBottom: "40px",  
-  },
-};
-
-
-const PhotoGallery = () => {
-  const typingSpeed = 100;
-
+const Maintenance: React.FC = () => {
   return (
-    <div style={styles.page}>
-      <NavbarP />
-      <main style={styles.main}>
-        <TypingText 
-          textToType="Photo Gallery" 
-          typingSpeed={typingSpeed} 
-          style={styles.heading} 
-        />
-        <h1>Click on the images to view them in full size</h1>
-        <Gallery />
-      </main>
+    <div style={styles.container}>
+      <h1 style={styles.heading}>I'll be back soon!</h1>
+      <p style={styles.text}>
+        My website is currently undergoing scheduled maintenance.
+        <br />
+        Thank you for your patience!
+      </p>
+      <p style={styles.footer}>
+        — Patralika Ghosh
+      </p>
     </div>
   );
 };
 
-export default PhotoGallery;
+const styles = {
+  container: {
+    display: "flex",
+    flexDirection: "column" as "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center" as "center",
+    height: "100vh",
+    backgroundColor: "#f8f9fa",
+    fontFamily: "Arial, sans-serif",
+  },
+  heading: {
+    fontSize: "2.5rem",
+    color: "#333",
+    marginBottom: "1rem",
+  },
+  text: {
+    fontSize: "1.25rem",
+    color: "#555",
+  },
+  footer: {
+    marginTop: "2rem",
+    fontSize: "1rem",
+    color: "#777",
+  },
+};
+
+export default Maintenance;
