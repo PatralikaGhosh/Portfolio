@@ -57,7 +57,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 * Icons: npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
 
-* Error Solutions:
+## Error Solutions:
 If you get this error:
 
 [Error: EINVAL: invalid argument, readlink 'C:\Users\ghosh\OneDrive\Desktop\PatralikaGhosh.github.io\pghosh_personal_web\.next\server\app\favicon.ico\route.js'] {
