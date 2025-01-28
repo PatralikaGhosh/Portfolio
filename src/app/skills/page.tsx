@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import TypingText from "@/components/typingtext"; 
 import { Button } from '@nextui-org/react';

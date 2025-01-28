@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/navbar"; 
+import Navbar from "@/components/Navbar"; 
 import TypingText from "@/components/typingtext";
 import CardComponent from "@/components/projectcard";
 

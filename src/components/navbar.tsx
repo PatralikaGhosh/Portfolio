@@ -1,126 +1,90 @@
+"use client";
 import styled from 'styled-components';
+import Image from "next/image";
+import React from "react";
+import { Socials } from "../constants";
 import Link from 'next/link';
 import { Button } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const CustomButton = styled(Button)`
-  color: green;
-  padding: 8px 16px; 
-  border-radius: 4px; 
-  &:hover {
-    background-color: green;
-    color: white;
-  }
-`;
-
-const NavbarContainer = styled.nav`
-  background-color: black;
-  padding: 10px 20px;
-  font-family: 'Roboto Mono', monospace;
-  display: flex;
-  justify-content: space-between; /* Distribute space between items */
-  align-items: center;
-`;
-
-
-const NavList = styled.ul`
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-`;
-
-const NavItem = styled.li`
-  margin-right: 20px;
-  display: flex;
-  align-items: center;
-`;
-
 const HomeButton = styled(Button)`
   padding: 0; 
   border: none; 
-  color: green;
+  color: white;
   svg {
     transition: color 0.3s; /* Smooth color transition */
   }
 
   &:hover {
     svg {
-      color: white; /* Change icon color on hover */
+      color: purple; /* Change icon color on hover */
     }
   }
 `;
 
 const IconLink = styled.a`
-  color: green;
+  color: white;
   font-size: 24px;
   margin-left: 20px;
   transition: color 0.3s;
   &:hover {
-    color: white;
+    color: purple;
   }
-`;
-
-const RightContainer = styled.div`
-  display: flex;
-  align-items: center;
 `;
 
 const Navbar = () => {
   return (
-    <NavbarContainer>
-      <NavList>
-        <NavItem>
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+        <a href="#about-me" className="h-auto w-auto flex flex-row items-center">
           <Link href="/" passHref>
             <HomeButton as="a" color="primary" variant="ghost">
               <FontAwesomeIcon icon={faHome} />
             </HomeButton>
           </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="/projects" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
-              Projects
-            </CustomButton>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="/skills" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
+        </a>
+
+        {/* Centered menu links */}
+        <div className="w-full max-w-[1000px] h-full flex flex-row items-center justify-center md:mr-20">
+          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+            <a href="#about-me" className="cursor-pointer">
+              About me
+            </a>
+            <a href="#skills" className="cursor-pointer">
               Skills
-            </CustomButton>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="https://nimrobotics.com/hfes23/" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
+            </a>
+            <a href="#projects" className="cursor-pointer">
+              Projects
+            </a>
+            {/* <a href="#experience" className="cursor-pointer">
+              Experience
+            </a> */}
+            <a href="https://nimrobotics.com/hfes23/" className="cursor-pointer">
               Research
-            </CustomButton>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link href="https://drive.google.com/file/d/16QU3Xp6obH6QRdJiQ1jtHrpVsYK3H2XV/view?usp=sharing" passHref>
-            <CustomButton as="a" color="primary" variant="ghost">
+            </a>
+            <a href="https://drive.google.com/file/d/15uT_gtPnhp86RFG3HwAFeRHL4h-EghS0/view?usp=sharing" className="cursor-pointer">
               Resume
-            </CustomButton>
+            </a>
+          </div>
+        </div>
+
+        {/* Social media links */}
+        <div className="flex flex-row gap-5">
+          <Link href="https://github.com/PatralikaGhosh" passHref>
+            <IconLink>
+              <FontAwesomeIcon icon={faGithub} />
+            </IconLink>
           </Link>
-        </NavItem>
-      </NavList>
-      <RightContainer>
-        <Link href="https://github.com/PatralikaGhosh" passHref>
-          <IconLink>
-            <FontAwesomeIcon icon={faGithub} />
-          </IconLink>
-        </Link>
-        <Link href="https://www.linkedin.com/in/patralika-ghosh-58331b25b/" passHref>
-          <IconLink>
-            <FontAwesomeIcon icon={faLinkedin} />
-          </IconLink>
-        </Link>
-      </RightContainer>
-    </NavbarContainer>
+          <Link href="https://www.linkedin.com/in/patralika-ghosh-58331b25b/" passHref>
+            <IconLink>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </IconLink>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 
