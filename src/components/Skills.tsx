@@ -2,7 +2,7 @@ import {
     Second_Skill_data,
     Third_Skill_data,
     First_Skill_data,
-  } from "@/constants";
+  } from "../constants";
   import React from "react";
   import SkillDataProvider from "./sub/SkillDataProvider";
   
