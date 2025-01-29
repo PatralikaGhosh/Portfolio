@@ -58,13 +58,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 * Icons: npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
 
 ## Error Solutions:
-If you get this error:
+1. If you get this error:
 
-[Error: EINVAL: invalid argument, readlink 'C:\Users\ghosh\OneDrive\Desktop\PatralikaGhosh.github.io\pghosh_personal_web\.next\server\app\favicon.ico\route.js'] {
-  errno: -4071,
-  code: 'EINVAL',
-  syscall: 'readlink',
-  path: 'C:\\Users\\ghosh\\OneDrive\\Desktop\\PatralikaGhosh.github.io\\pghosh_personal_web\\.next\\server\\app\\favicon.ico\\route.js'
-}
+  [Error: EINVAL: invalid argument, readlink 'C:\Users\ghosh\OneDrive\Desktop\PatralikaGhosh.github.io\pghosh_personal_web\.next\server\app\favicon.ico\route.js'] {
+    errno: -4071,
+    code: 'EINVAL',
+    syscall: 'readlink',
+    path: 'C:\\Users\\ghosh\\OneDrive\\Desktop\\PatralikaGhosh.github.io\\pghosh_personal_web\\.next\\server\\app\\favicon.ico\\route.js'
+  }
 
-*** delete the .next folder and run npm run dev
+  *** delete the .next folder and run npm run dev
+
+2. If the deployment fails and you fixed it, try clearing the cache on vercel.
+
