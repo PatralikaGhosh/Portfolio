@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { slideInFromTop, slideInFromLeft, slideInFromRight } from "../../../utils/motion";
+import MyPhoto from "./MyPhoto";
 
 const HeroContent = () => {
   return (
@@ -31,18 +32,7 @@ const HeroContent = () => {
         Senior Computer Science student at Texas A&M University. Currently dabbling in blockchain development and machine learning.
         </motion.p>}
       </div>
-
-      <motion.div
-        variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
-      >
-        <Image
-          src="/mainIconsdark.svg"
-          alt="work icons"
-          height={650}
-          width={650}
-        />
-      </motion.div>
+        <MyPhoto />
     </motion.div>
   );
 };
