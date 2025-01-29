@@ -1,5 +1,5 @@
 import "./technical.css";
-import Hero from '../../components/Hero';
+import About from '../../components/About';
 import Skills from '../../components/Skills';
 import Projects from '../../components/Projects';
 
@@ -8,7 +8,7 @@ export default function Technical(){
     <>
       <main className='h-full w-full'>
         <div className='flex flex-col gap-20'>
-          <Hero />
+          <About />
           <Skills />
           <Projects />
         </div>

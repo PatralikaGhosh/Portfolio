@@ -2,8 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-
-import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { slideInFromTop, slideInFromLeft, slideInFromRight } from "../../../utils/motion";
 
@@ -26,12 +24,12 @@ const HeroContent = () => {
             </span>
           </span>
         </motion.div>
-        {/* <motion.p
+        {<motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-        Insert text here
-        </motion.p> */}
+        Senior Computer Science student at Texas A&M University. Currently dabbling in blockchain development and machine learning.
+        </motion.p>}
       </div>
 
       <motion.div
