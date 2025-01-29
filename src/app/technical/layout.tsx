@@ -1,7 +1,7 @@
 import React from "react";
 import { Inter } from "next/font/google";
 import "./technical.css";
-import Navbar from "../../components/Navbar";
+import NewNavbar from "../../components/NewNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +13,7 @@ export default function TechnicalLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
-        <Navbar />
+        <NewNavbar/>
         {children}
         
         </body>
