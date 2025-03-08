@@ -26,8 +26,13 @@ const Projects = () => {
         <ProjectCard
           src="/pos_system.png"
           title="POS System"
-          description="The system offered tailored views for Customers, Managers, and Cashiers, powered by a Django backend, React.js frontend, and a PostgreSQL database for efficient order management."
-          
+          description="The system offered tailored views for Customers, Managers, and Cashiers, made using a Django backend, React.js frontend, and a PostgreSQL database."
+        />
+        <ProjectCard
+          src="/docAssist.png"
+          title="DocAssist"
+          description="📂📑docAssist is an AI-powered assistant to help users navigate and understand complex documentation easily"
+          githubLink = "https://github.com/PatralikaGhosh/doc_assist_p"
         />
         <ProjectCard
           src="/bandit_typer.png"

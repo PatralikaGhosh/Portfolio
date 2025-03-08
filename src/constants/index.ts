@@ -41,6 +41,18 @@ export const First_Skill_data = [
       width: 80,
       height: 80,
     },
+    {
+      skill_name: "Node.js",
+      Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      width: 80,
+      height: 80,
+    },
+    {
+      skill_name: "Bootstrap",
+      Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      width: 80,
+      height: 80,
+    },
   ];
   
   export const Socials = [
@@ -83,6 +95,12 @@ export const First_Skill_data = [
       height: 50,
     },
     {
+      skill_name: "Express.js",
+      Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      width: 80,
+      height: 80,
+    },
+    {
       skill_name: "Java Script",
       Image: "/js.png",
       width: 65,
@@ -97,6 +115,12 @@ export const First_Skill_data = [
     {
       skill_name: "Latex",
       Image: "https://images.ctfassets.net/nrgyaltdicpt/451Wbu94Q1X3M5QIk74QLL/08e42061e965fb152a329ded74cdc3ce/overleaf-o-logo-primary.svg",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Latex",
+      Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       width: 70,
       height: 70,
     },
@@ -130,6 +154,24 @@ export const First_Skill_data = [
     {
       skill_name: "PyTorch",
       Image: "/PyTorch.svg.png",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Tensorflow",
+      Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Apache",
+      Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg",
+      width: 70,
+      height: 70,
+    },
+    {
+      skill_name: "Google Cloud API",
+      Image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
       width: 70,
       height: 70,
     },
