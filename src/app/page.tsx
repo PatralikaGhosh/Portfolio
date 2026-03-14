@@ -1,52 +1,29 @@
-"use client";
-import { useEffect, useState } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import './styles.css';
+// UnderMaintenance.tsx
+import React from "react";
 
-const Home = () => {
-  const [typingText, setTypingText] = useState("");
-  const textToType = "Patralika Ghosh";
-  const typingSpeed = 100;
-
-  useEffect(() => {
-    let index = 0;
-    const textLength = textToType.length;
-    const timer = setInterval(() => {
-      if (index < textLength) {
-        const charToAdd = textToType.charAt(index);
-        setTypingText(prevText => prevText + charToAdd);
-        index++;
-      } else {
-        clearInterval(timer);
-      }
-    }, typingSpeed);
-
-    return () => clearInterval(timer);
-  }, []);
-
+const UnderMaintenance: React.FC = () => {
   return (
-    <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link id="theme-link" rel="stylesheet" href="/styles.css" />
-        <title>Patralika Ghosh's website</title>
-      </Head>
-      <div className="body_head">
-        <header className="centered_header">
-          <div className="typing-container"></div>
-          <h1 id="typing-text">{typingText}</h1>
-          <nav>
-            <ul className="horizontal-menu">
-              <li><Link href="/technical" passHref>Technical Portfolio</Link></li>
-              <li><Link href="/photography" passHref>Photography Portfolio</Link></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-    </>
+    <div
+      style={{
+        fontFamily: "Arial, sans-serif",
+        backgroundColor: "#f4f4f4",
+        color: "#333",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        margin: 0,
+      }}
+    >
+      <h1 style={{ fontSize: "2.5rem", marginBottom: "0.5rem" }}>
+        🚧 Under Maintenance
+      </h1>
+      <p style={{ fontSize: "1.2rem", color: "#666" }}>
+        I’ll be back shortly.
+      </p>
+    </div>
   );
 };
 
-export default Home;
+export default UnderMaintenance;
